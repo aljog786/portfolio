@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
@@ -172,5 +173,4 @@
   margin: 0 auto;
   padding: 0;
   text-align: center;
-  overflow-x: hidden;
 }
