@@ -57,7 +57,7 @@
     --color-border: hsl(var(--border));
     --color-background: hsl(var(--background));
     --color-foreground: hsl(var(--foreground));
-    --color-primary: hsl(233, 100%, 69%);
+    --color-primary: hsl(233, 71.72% ,19.9%);
     --color-primary-foreground: hsl(var(--primary-foreground));
     --color-card: hsl(var(--card));
     --animate-float: float 6s ease-in-out infinite;
@@ -667,9 +667,15 @@
     background-color: var(--color-primary);
   }
   .bg-primary\/10 {
-    background-color: color-mix(in srgb, hsl(233, 100%, 69%) 10%, transparent);
+    background-color: color-mix(in srgb, hsl(233, 71.72% ,19.9%) 10%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
+    }
+  }
+  .bg-primary\/30 {
+    background-color: color-mix(in srgb, hsl(233, 71.72% ,19.9%) 30%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-primary) 30%, transparent);
     }
   }
   .bg-transparent {
@@ -932,7 +938,7 @@
   .hover\:bg-primary\/10 {
     &:hover {
       @media (hover: hover) {
-        background-color: color-mix(in srgb, hsl(233, 100%, 69%) 10%, transparent);
+        background-color: color-mix(in srgb, hsl(233, 71.72% ,19.9%) 10%, transparent);
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-primary) 10%, transparent);
         }
@@ -942,7 +948,7 @@
   .hover\:bg-primary\/20 {
     &:hover {
       @media (hover: hover) {
-        background-color: color-mix(in srgb, hsl(233, 100%, 69%) 20%, transparent);
+        background-color: color-mix(in srgb, hsl(233, 71.72% ,19.9%) 20%, transparent);
         @supports (color: color-mix(in lab, red, red)) {
           background-color: color-mix(in oklab, var(--color-primary) 20%, transparent);
         }
