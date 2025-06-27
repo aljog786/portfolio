@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from "react";
+import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 
 export const SeaBackground = () => {
@@ -14,7 +15,7 @@ export const SeaBackground = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  useEffect(() => {
+  useGSAP(() => {
     // GSAP Wave Animation
     if (waveRef1.current && waveRef2.current && waveRef3.current) {
       const duration = 25; // Slower duration for more natural flow
