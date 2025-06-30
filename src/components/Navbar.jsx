@@ -1,6 +1,7 @@
-import { cn } from "../lib/utils";
-import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { cn } from "../lib/utils";
+import { TiThMenuOutline } from "react-icons/ti";
+import { IoCloseOutline } from "react-icons/io5";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -43,7 +44,7 @@ export const Navbar = () => {
         </a>
 
         {/* desktop nav */}
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex space-x-8 px-10">
           {navItems.map((item, key) => (
             <a
               key={key}
@@ -61,13 +62,17 @@ export const Navbar = () => {
           className="md:hidden p-2 text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          {isMenuOpen ? (
+            <IoCloseOutline size={24} />
+          ) : (
+            <TiThMenuOutline size={24} />
+          )}
         </button>
 
         {/* mobile nav menu */}
         <div
           className={cn(
-            "fixed inset-0 h-100 bg-white/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 h-100 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
@@ -79,7 +84,7 @@ export const Navbar = () => {
               <a
                 key={key}
                 href={item.href}
-                className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="text-gray-800 dark:text-white hover:text-primary transition-colors duration-300"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}

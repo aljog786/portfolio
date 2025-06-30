@@ -1,4 +1,6 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { DiGithubFull } from "react-icons/di";
+import { FaArrowRight } from "react-icons/fa6";
+import { IoLinkSharp } from "react-icons/io5";
 import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
@@ -84,14 +86,14 @@ export const ProjectsSection = () => {
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <ExternalLink size={20} />
+                      <IoLinkSharp size={25} />
                     </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <Github size={20} />
+                      <DiGithubFull size={25} />
                     </a>
                   </div>
                 </div>
@@ -106,7 +108,7 @@ export const ProjectsSection = () => {
             target="_blank"
             href="https://github.com/aljog786"
           >
-            Check My Github <ArrowRight size={16} />
+            Check My Github <FaArrowRight size={16} />
           </a>
         </div>
       </div>

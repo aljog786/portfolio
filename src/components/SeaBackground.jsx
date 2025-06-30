@@ -1,4 +1,3 @@
-// react-pf/src/components/SeaBackground.jsx
 import { useEffect, useState, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";

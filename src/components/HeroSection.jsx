@@ -1,4 +1,4 @@
-import { ArrowDown } from "lucide-react";
+import { FaArrowDown } from "react-icons/fa6";
 
 export const HeroSection = () => {
   return (
@@ -14,7 +14,7 @@ export const HeroSection = () => {
               {" "}
               ALJO
             </span>
-            <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
+            <span className="text-primary ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
               GEORGE
             </span>
@@ -36,7 +36,7 @@ export const HeroSection = () => {
 
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-sm text-muted-foreground mb-2"> Scroll </span>
-        <ArrowDown className="h-5 w-5 text-primary" />
+        <FaArrowDown className="h-5 w-5 text-primary" />
       </div>
     </section>
   );
