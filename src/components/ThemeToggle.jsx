@@ -1,4 +1,5 @@
-import { FaRegSun, FaRegMoon } from "react-icons/fa";
+import { FaSun } from "react-icons/fa6";
+import { FaMoon } from "react-icons/fa";
 import { useEffect, useState } from "react";
 import { cn } from "../lib/utils";
 
@@ -37,9 +38,9 @@ export const ThemeToggle = () => {
       )}
     >
       {isDarkMode ? (
-        <FaRegSun className="h-6 w-6 text-yellow-300" />
+        <FaMoon className="h-6 w-6 text-yellow-300" />
       ) : (
-        <FaRegMoon className="h-6 w-6 text-yellow-300" />
+        <FaSun className="h-6 w-6 text-yellow-300" />
       )}
     </button>
   );

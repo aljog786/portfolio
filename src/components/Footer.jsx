@@ -2,10 +2,8 @@ import { FaArrowUp } from "react-icons/fa6";
 
 export const Footer = () => {
   return (
-    <footer className="py-5 px-4 bg-card relative border-border bg-gray-800/60 backdrop-blur-md shadow-md flex flex-wrap justify-between items-center">
-      {" "}
+    <footer className="py-5  relative border-border bg-gray-800/60 backdrop-blur-md shadow-md flex flex-wrap justify-around items-center">
       <p className="text-sm text-muted-foreground">
-        {" "}
         {"<ALJO/>"} &copy; {new Date().getFullYear()}
       </p>
       <a
