@@ -63,9 +63,9 @@ export const Navbar = () => {
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
           {isMenuOpen ? (
-            <IoCloseOutline size={24} />
+            <IoCloseOutline className="hover:text-primary" size={24} />
           ) : (
-            <TiThMenuOutline size={24} />
+            <TiThMenuOutline className="hover:text-primary" size={24} />
           )}
         </button>
 
